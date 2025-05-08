@@ -9,4 +9,5 @@
 
  - [x] Aula 02 é a aula 04 do video 
  - validar a página de login com Javascript
-      
+
+ - Aula 04 completa      
