@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
     <title>Login - Controle de gastos</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
@@ -19,13 +21,13 @@
           type="button"
           class="clear"
           id="recover-password-button"
-          disabled="false"
+          disabled="true"
         >
           Recuperar senha
         </button>
       </div>
       <div>
-        <button type="button" class="solid" id="login-button" disabled="false">Entrar</button>
+        <button type="button" class="solid" id="login-button" disabled="true">Entrar</button>
       </div>
       <div>
         <button type="button" class="outline">Registrar</button>
@@ -33,19 +35,19 @@
     </form>
   </body>
 
-  <link rel="stylesheet" href="index.css" />
+
 
   <script>
     function validateFields() {
       const emailValid = isEmailValid();
-      document.getElementById("recover-password-button").disabled = !emailValid;
+      document.getElementById('recover-password-button').disabled = !isEmailValid;
 
       const Passwordvalid = isPasswordvalid();
-      document.getElementById('login-button').disabled = !emailValid || !isPasswordvalid;
+      document.getElementById('login-button').disabled = !isEmailValid || !isPasswordvalid;
     }
 
     function isEmailValid() {
-      const email = document.getElementById("email").value;
+      const email = document.getElementById('email').value;
       if (!email) {
         return false;
       }
