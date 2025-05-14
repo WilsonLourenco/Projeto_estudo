@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+<link rel="stylesheet" href="index.css" />
+=======
 function validateFields() {
   toggleButtonsDisable();
   toggleEmailErros();
@@ -59,3 +62,4 @@ function isPasswordvalid() {
 function validateEmail(email) {
   return /\$+@\$+\.\$/.test(email);
 }
+>>>>>>> 87f8899 (Aula 05)
